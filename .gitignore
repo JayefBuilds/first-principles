@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+output/
+tmp/
+
+# These are learner-facing fixtures; override the developer's global ignores.
+!sessions/03-the-file-it-reads-before-you-speak/examples/
+!sessions/03-the-file-it-reads-before-you-speak/examples/AGENTS.md
+!sessions/03-the-file-it-reads-before-you-speak/examples/CLAUDE.md

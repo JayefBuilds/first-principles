@@ -1,0 +1,16 @@
+{
+  "description": "Run the portable policy check after an edit tool succeeds.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "apply_patch|Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 \"$(git rev-parse --show-toplevel)/exercises/07/check_policy.py\" \"$(git rev-parse --show-toplevel)/exercises/07\""
+          }
+        ]
+      }
+    ]
+  }
+}

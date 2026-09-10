@@ -1,0 +1,15 @@
+{
+  "tools": [
+    {
+      "name": "read_issue",
+      "description": "Read one issue by key.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "key": {"type": "string", "description": "Issue key such as TEAM-42"}
+        },
+        "required": ["key"]
+      }
+    }
+  ]
+}

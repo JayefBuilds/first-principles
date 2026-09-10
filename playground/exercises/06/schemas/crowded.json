@@ -1,0 +1,58 @@
+{
+  "tools": [
+    {
+      "name": "read_issue",
+      "description": "Read one issue by key, including its title, body, current state, assignee, labels, comments, linked issues, sprint, and project metadata.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "key": {"type": "string", "description": "Issue key such as TEAM-42"},
+          "include_comments": {"type": "boolean", "description": "Include every comment in chronological order"},
+          "include_links": {"type": "boolean", "description": "Include linked issues and relationship types"}
+        },
+        "required": ["key"]
+      }
+    },
+    {
+      "name": "search_issues",
+      "description": "Search issues by free text, project, status, label, assignee, sprint, or update date and return matching issue summaries.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {"type": "string", "description": "Free text or structured search expression"},
+          "project": {"type": "string", "description": "Project key"},
+          "limit": {"type": "integer", "minimum": 1, "maximum": 100}
+        },
+        "required": ["query"]
+      }
+    },
+    {
+      "name": "update_issue",
+      "description": "Update supported fields on one issue after the caller has confirmed the intended changes.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "key": {"type": "string", "description": "Issue key"},
+          "title": {"type": "string"},
+          "body": {"type": "string"},
+          "status": {"type": "string"},
+          "assignee": {"type": "string"},
+          "labels": {"type": "array", "items": {"type": "string"}}
+        },
+        "required": ["key"]
+      }
+    },
+    {
+      "name": "add_comment",
+      "description": "Add a plain text comment to an issue.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "key": {"type": "string"},
+          "comment": {"type": "string", "minLength": 1}
+        },
+        "required": ["key", "comment"]
+      }
+    }
+  ]
+}

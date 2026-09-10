@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 \"${CLAUDE_PROJECT_DIR}/exercises/07/check_policy.py\" \"${CLAUDE_PROJECT_DIR}/exercises/07\""
+          }
+        ]
+      }
+    ]
+  }
+}
