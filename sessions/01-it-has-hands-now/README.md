@@ -4,10 +4,10 @@
 
 **Exact prompt:**
 
-> Inspect this playground. Read its README, find the automated tests, run them, and tell me which behavior has the strongest boundary-case coverage. Do not edit files. End with the tools you used in order and the number of tool calls.
+> Inspect this playground and answer one question: Can a player join the lobby with the wrong code? Read the README, find the relevant code and test, and run the tests before answering. Do not edit files. Show what evidence supports your answer. End with the tools you used in order and the number of tool calls.
 
 **Atoms card:** tools in order: ___; largest result: ___; calls before answer: ___; one observation: ___.
 
-**Worked expected example:** A human shell receipt is `python3 -m unittest discover -s tests -v`: it reports six tests and `OK`. `join_with_code` has the broadest exercised set, including a valid join, wrong code, the exact expiration boundary, and a full lobby. This is shell output, not an agent transcript; an agent's actual tool order and call count will vary, so record its real run rather than copying this receipt.
+**Worked expected example:** A human shell receipt is `python3 -m unittest discover -s tests -v`: it reports six tests and `OK`. `src/lobby.py` returns `INVALID_CODE` when the supplied code does not match, and `test_wrong_code_is_rejected` confirms that behavior. This is shell output and file evidence, not an agent transcript. Record the path your agent actually takes rather than copying this receipt.
 
-**Common snag / recovery:** An answer names coverage without opening `tests/test_lobby.py`. Ask it to cite the test names and inspect that file before you accept the claim.
+**Common snag / recovery:** The agent answers from the README or source without running the tests. Ask what it ran, then open `src/lobby.py` and `tests/test_lobby.py` to check the answer yourself.

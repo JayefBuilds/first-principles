@@ -1,5 +1,10 @@
 # Worklog
 
+## 2026-09-11
+
+- Simplified session 1's live task to a plain wrong-code question and aligned the deck, public exercise, and private recording notes.
+- Reworked slides 5 and 6 as one continuous spoken explanation with an explicit slide-change cue.
+
 ## 2026-09-10
 
 - Created the public `JayefBuilds/first-principles` GitHub repository and prepared `main` for the first push.
