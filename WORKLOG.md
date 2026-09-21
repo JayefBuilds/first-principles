@@ -1,5 +1,10 @@
 # Worklog
 
+## 2026-09-21
+
+- Updated session 3 slide 5 for Claude Code 2.1.277+ support for `AGENTS.md`, including the default `CLAUDE.md` precedence caveat.
+- Consolidated the newer nine-slide session 2 deck into this canonical clone before publishing both presentation updates.
+
 ## 2026-09-11
 
 - Simplified session 1's live task to a plain wrong-code question and aligned the deck, public exercise, and private recording notes.
