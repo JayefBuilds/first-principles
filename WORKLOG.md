@@ -1,5 +1,9 @@
 # Worklog
 
+## 2026-09-22
+
+- Replaced "compose" language in session 3 with a clearer explanation of which instruction layers load before the prompt, and aligned the private speaker notes.
+
 ## 2026-09-21
 
 - Updated session 3 slide 5 for Claude Code 2.1.277+ support for `AGENTS.md`, including the default `CLAUDE.md` precedence caveat.
