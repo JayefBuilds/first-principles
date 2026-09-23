@@ -2,6 +2,7 @@
 
 ## 2026-09-22
 
+- Removed session 4's redundant receipt slide so its ending moves directly from the live example to audience practice.
 - Rewrote session 4's agenda in conversational language and clarified that loading means when skill content enters the agent's context.
 - Removed the redundant session 3 receipt slide so the post-demo sequence moves directly from proof to audience practice.
 - Replaced "compose" language in session 3 with a clearer explanation of which instruction layers load before the prompt, and aligned the private speaker notes.
