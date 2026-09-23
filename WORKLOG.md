@@ -2,6 +2,7 @@
 
 ## 2026-09-22
 
+- Removed the redundant session 3 receipt slide so the post-demo sequence moves directly from proof to audience practice.
 - Replaced "compose" language in session 3 with a clearer explanation of which instruction layers load before the prompt, and aligned the private speaker notes.
 
 ## 2026-09-21
